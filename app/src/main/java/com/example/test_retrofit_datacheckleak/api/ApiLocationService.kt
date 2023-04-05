@@ -9,5 +9,5 @@ import retrofit2.http.POST
 
 interface ApiLocationService {
     @POST("v1/freechecks/email/breaches")
-    suspend  fun sendTest(@Body body: HashMap<String, String>): Response<Single<DataLeakCheck>>
+    suspend  fun sendTest(@Body body: HashMap<String, String>): Response<DataLeakCheck>
 }
